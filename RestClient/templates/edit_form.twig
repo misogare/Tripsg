@@ -1,0 +1,64 @@
+{% extends "base.twig" %}
+{% block title %}TRIPS APP - edit TRIP {% endblock %}
+{% block brand %}TRIPS APP - edit TRIP {% endblock %}
+{% block body %}
+<br>
+<br>
+<center>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 box-blue text-center">Update Data's</div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 jumbotron">
+            <form class="form-horizontal" action="" method="post" novalidate enctype="multipart/form-data">
+                <div class="form-group">
+                    <label class="control-label"> trip id: </label>
+                    <input class="form-control" type="text" name="id" maxlength="30" />
+                </div>  
+                <div class="form-group">
+                    <label class="control-label"> trip start date: </label>
+                    <input class="form-control" type="text" name="start_date" maxlength="30" />
+                </div>       
+                <div class="form-group">
+                    <label class="control-label"> trip end date: </label>
+                    <input class="form-control" type="text" name="end_date" maxlength="30" />
+                </div>  
+                <div class="form-group">
+                    <label class="control-label"> trip email: </label>
+                    <input class="form-control" type="text" name="description" maxlength="30" />
+                </div>  
+                <div class="form-group">
+                    <label class="control-label"> trip mobile: </label>
+                    <input class="form-control" type="text" name="location" maxlength="30" />
+                </div>  
+                 <div class="form-group">
+                    <label class="control-label"> trip city: </label>
+                    <input class="form-control" type="text" name="city" maxlength="30" />
+                </div>  
+                 <div class="form-group">
+                    <label class="control-label"> trip country: </label>
+                    <input class="form-control" type="text" name="country" maxlength="30" />
+                </div>  
+                <div class="form-grou files">
+                    <label class="control-label"> photo filename: </label>
+                    <input class="form-control" type="file" name="image" />
+                </div>  
+            
+            <div class="col-md-3"></div>
+        
+        <br>
+        <div class="form-group">
+            <button class="btn btn-blue btn-block" type="submit" name="submit"> submit </button>
+        </div>  
+        </form>
+       </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+</center>
+
+ {% endblock %}

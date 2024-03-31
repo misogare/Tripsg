@@ -1,0 +1,36 @@
+{% extends "base.twig" %}
+{% block title %}trips app - delete form{% endblock %}
+{% block brand %}trips app - delete form {% endblock %}
+{% block body %}
+<br>
+<br>
+<center>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 box-blue text-center">Delete trip from database</div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 jumbotron">
+            <form class="form-horizontal" action="" method="post" novalidate>
+                <div class="form-group">
+                    <label class="control-label"> contact id: </label>
+                    <input class="form-control" type="text" name="id" maxlength="30" />
+                </div>  
+             
+            <div class="col-md-3"></div>
+        
+        <br>
+        <div class="form-group">
+            <button class="btn btn-blue btn-block" type="submit" name="submit"> submit </button>
+        </div>  
+        </form>
+       </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+</center>
+
+ {% endblock %}

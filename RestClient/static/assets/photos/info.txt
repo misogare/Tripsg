@@ -1,0 +1,18 @@
+ec2-user@54.162.204.66
+lab3.pem
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example site name</title>
+</head>
+<body>
+<h1>Example message!</h1>
+<br><br>
+ <!--   Any other links goes here -->
+<br><br>
+<pre>
+Current Directory: <?= dirname(__FILE__)  ?>
+</pre>

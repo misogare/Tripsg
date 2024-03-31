@@ -1,0 +1,51 @@
+{% extends "base.twig" %}
+{% block title %}TRIPS APP -  TRIP table {% endblock %}
+{% block brand %}TRIPS APP - TRIP table {% endblock %}
+{% block body %}
+<br>   
+<br>
+<center>
+    <div class="container" >
+        <div class="row">
+          <div class="col-md-2"></div>
+            <div class="col-md-8 box-blue text-center">View database</div>
+            <div class="col-md-2"></div>
+    </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 jumbotron text-center">
+              <div class="table-responsive">
+                  <table class="table table-striped table-hover">
+                      <tr>
+                           <th>id</th>
+                          <th>startdate</th>
+                          <th>enddate</th>
+                          <th>description</th>
+                          <th>location</th>
+                           <th>city</th>
+                            <th>country</th>
+                          <th>photo filename</th>
+                      </tr>
+                      {% for row in records %}
+                    <tr>
+                        <td>{{ row.id }}</td> 
+                      <td>{{ row.start_date }}</td>    
+                      <td>{{ row.end_date }}</td> 
+                        <td>{{ row.description }}</td>  
+                       <td>{{ row.location}}</td>  
+                        <td>{{ row.city}}</td>  
+                         <td>{{ row.country}}</td>  
+                         <td><img src="./static/assets/photos/{{ row.filename }}" width="100" height="100" alt="{{ row.filename }}"></td> 
+                      </tr>
+                      {% endfor %}
+                  </table>
+              </div>
+          </div>
+            <div class="col-md-2"></div>
+    </div>
+    </div>
+</center>
+    
+ {% endblock %}
+
+
